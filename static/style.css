@@ -1,0 +1,119 @@
+body {
+    font-family: Arial;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+
+/* 🔥 هيدر */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* محتوى الصفحة */
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* العناوين */
+h2 {
+    color: #333;
+}
+
+/* 🔥 إزالة النقاط */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* 🔥 الكارد */
+li {
+    background: white;
+    margin: 15px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 🔥 النص داخل الكارد */
+.job-info {
+    text-align: left;
+}
+
+/* 🔥 أزرار Edit/Delete */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* زر Edit */
+.edit-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #2563eb;
+}
+
+/* زر Delete */
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}
+
+/* 🔥 فورم الإضافة */
+.add-form {
+    margin-top: 30px;
+}
+
+/* 🔥 inputs */
+input, select {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* 🔥 زر ADD الكبير */
+.add-btn {
+    background-color: #10b981; /* أخضر */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-btn:hover {
+    background-color: #059669;
+}
+
+/* 🔥 Hover للكارد */
+li:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}

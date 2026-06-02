@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Job</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>✏️ Edit Job</h1>
+</header>
+
+<div class="container">
+
+    <form action="/update/{{ job[0] }}" method="POST">
+
+        <input type="text"
+               name="title"
+               value="{{ job[1] }}"
+               required>
+
+        <input type="text"
+               name="company"
+               value="{{ job[2] }}"
+               required>
+
+        <input type="number"
+               name="salary"
+               value="{{ job[3] }}"
+               required>
+
+        <select name="experience" required>
+            <option value="Junior" {% if job[4] == 'Junior' %}selected{% endif %}>Junior</option>
+            <option value="Mid" {% if job[4] == 'Mid' %}selected{% endif %}>Mid</option>
+            <option value="Senior" {% if job[4] == 'Senior' %}selected{% endif %}>Senior</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            💾 Save Changes
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
